@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar Project</title>
+    <link href="projectstyles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <a href = "index.html">
+        <h3 class = "back"><- Go Back</h3>
+    </a>
+
+    <h1 class = "title">Guitar Project</h1>
+    <br>
+    <p class = "game"> The game will go in this box</p>
+    <br>
+    <h2 class = "header">About This Project</h2>
+    <div class = "text">
+        <p>
+            <em>Language: Java</em>
+        </p>
+        <p>
+            This project was done in my Data Structures & Algorithms class to apply our work
+            surrounding Queues and interfaces to create a sound synthesizer package. The first
+            major component was creating a BoundedQueue, which worked to add items to the end
+            up to a certain capacity and remove them from the front. Importantly, this Queue was
+            also a ring buffer, allowing for a more efficient runtime.
+        </p>
+
+        <p>
+            With this data structure created, we implemented the Karplus-Strong algorithm, which
+            took the integers in the queue and figured out what the audio input would be by
+            considering the next value along with energy decay. Then, using the StdAudio package from
+            the Princeton javalib, we were able to make an audio output. This structure allows for
+            long sequences, such as songs, to be played with a "plucking" sound much like a real guitar.
+        </p>
+    </div>
+    <br>
+    <h2 class = "header">My Contributions</h2>
+    <div class = "text">
+        <ul>
+            <li>
+                Implemented a ring-buffer Queue that allowed inputs to be inserted and removed
+                in proper form.
+            </li>
+            <li>
+                Used a variation of the Karplus-Strong algorithm to turn those integers into consistent
+                audio outputs.
+            </li>
+            <li>
+                Created a digital "keyboard" of strings that could be translated into integer outputs
+                for the Queue.
+            </li>
+        </ul>
+    </div>
+    <h2 class = "header">Code</h2>
+    <div class = "text">
+        <p>
+            Because this was a class project, I am not allowed to make this code publicly
+            accessible. However, I have been given permission to privately share it with interested
+            parties outside of my university, so do contact me if you are curious. (make sure
+            this is accurate)
+        </p>
+    </div>
+</body>
+</html>

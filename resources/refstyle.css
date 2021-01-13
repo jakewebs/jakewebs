@@ -1,0 +1,48 @@
+/* https://www.codecademy.com/learn/learn-css/modules/learn-css-selectors-visual-rules/cheatsheet
+   https://www.codecademy.com/courses/learn-css/lessons/css-setup-selectors/exercises/review-selectors
+   Sources for this code, which was used to refresh my memory of css!
+ */
+
+ p {
+   font-family: Arial;
+ }
+
+ h1 {
+   color: maroon;
+ }
+
+ .title {
+   color: teal;
+ }
+
+ .uppercase {
+   text-transform: uppercase;
+ }
+
+ h2.sub {
+   font-family: cursive;
+ }
+
+ .description h5 {
+   color: teal;
+ }
+
+ h5, p {
+   font-family: Georgia;
+ }
+
+ h5 {
+   color: rebeccapurple;
+ }
+
+ #introduction {
+    color: blue;
+ }
+
+ #habitat {
+    color: green;
+ }
+
+ #media {
+    color: brown;
+ }

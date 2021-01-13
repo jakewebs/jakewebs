@@ -1,0 +1,32 @@
+body {
+    background-color: #A0A0A0;
+    width: 100%;
+    color: #F5F5F5;
+    font-family: "Georgia";
+}
+
+a {
+    text-decoration: none;
+    color: #000080;
+}
+
+.title {
+    text-align: center;
+    color: #000080;
+}
+
+.game {
+    width: 800px;
+    height: 800px;
+    background-color: #F5F5F5;
+    color: #000080;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    color: #000080;
+}
+.text {
+    margin: 0% 5%;
+}

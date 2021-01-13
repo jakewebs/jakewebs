@@ -1,0 +1,141 @@
+/*Colors: https://www.w3schools.com/cssref/css_colors.asp */
+
+/* Remove when construction done */
+#construction {
+    width: 43%;
+    margin: 1.5% 29.5%;
+    background-color: ivory;
+    color: indigo;
+    border: 5px solid crimson;
+    padding: 5px;
+    text-align: center;
+}
+
+h2 {
+    color: #000080;
+    border: 3px solid #F5F5F5;
+    padding: 5px;
+    width: 25%;
+    margin: 2% 37.5%;
+    text-align: center;
+}
+
+body {
+    /*text-align: center;*/
+    /*background-color: #D8BFD8;*/
+    background-color: #A0A0A0;
+    width: 100%;
+    justify-self: center;
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+h4, p, li {
+    font-family: "Monaco";
+    color: #F5F5F5;
+}
+
+h4, p {
+    margin: 0.2% 2%;
+}
+
+.title {
+    font-family: "Georgia";
+}
+
+.byow {
+    background-image: url("images/byow.jpg");
+}
+
+.map {
+   background-image: url("images/maps.jpg");
+}
+
+.ants {
+   background-image: url("images/ants.jpg");
+}
+
+.guitar {
+    background-image: url("images/guitar.jpg");
+}
+
+.stock {
+    background-image: url("images/stocks.jpg");
+}
+
+.img p:hover {
+    background-color: #000080;
+    height: 100%;
+    top: 0%;
+    font-size: 4vmin;
+}
+
+.img {
+    background-position: center;
+    height: 550px;
+    /*width: 800px;*/
+    width: 80%;
+    text-align: center;
+}
+.imgtext {
+    background-color: #000080;
+    opacity: 0.8;
+    height: 67px;
+    top: 88%;
+    position: relative;
+    font-size: 2.5vmin;
+    text-decoration: none;
+    margin: 0%;
+}
+
+#projects {
+    /* Center this */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5%;
+    margin: 5%;
+}
+
+#menu {
+    background-color: #000080;
+    color: #F5F5F5;
+    display: grid;
+    grid-template-columns: 20% 18% 12% 12% 12% 12% 12%;
+    grid-gap: 0%;
+    text-align: center;
+}
+
+.dropdown a {
+    color: #F5F5F5;
+    /*text-decoration: none;*/
+}
+
+a {
+    text-decoration: none;
+    color: #000080;
+}
+
+.dropdown a:hover {
+    background-color: #F5F5F5;
+    color: #000080;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    text-align: center;
+}
+
+#sources {
+    color: #000080;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 15% 10% 10% 10% 10% 10%;
+    grid-gap: 5%;
+    margin: 2% 17.5%;
+    border: 3px dashed #F5F5F5;
+}

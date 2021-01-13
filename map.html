@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BearMaps Project</title>
+    <link href="projectstyles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <a href = "index.html">
+        <h3 class = "back"><- Go Back</h3>
+    </a>
+
+    <h1 class = "title">BearMaps Project</h1>
+    <br>
+    <p class = "game"> The game will go in this box</p>
+    <br>
+    <h2 class = "header">About This Project</h2>
+    <div class = "text">
+        <p>
+            <em>Language: Java</em>
+        </p>
+        <p>
+            This project was done in my Data Structures & Algorithms class to apply our work
+            surrounding graphs and KdTrees. Specifically, we were given many vertices in the form
+            of locations within the city of Berkeley and sought to use the A* algorithm to find the
+            shortest path between two locations. This would be helpful in allowing people to use it
+            as a pathfinder for applications like driving and biking to get to their destination
+            as quickly as possible.
+        </p>
+
+        <p>
+            In order to find the shortest path, some form of distance calculation would be necessary.
+            I used a KdTree for this, with latitude and longitude as the two dimensions that were considered.
+            To make this distance calculation more efficient, I used a pruning algorithm that essentially
+            eliminated branches of the tree whose children would have no chance of containing the nearest
+            point to the one inputted.
+        </p>
+    </div>
+    <br>
+    <h2 class = "header">My Contributions</h2>
+    <div class = "text">
+        <ul>
+            <li>
+                Implemented an efficient A* algorithm to find the shortest path between two
+                points in the City of Berkeley.
+            </li>
+            <li>
+                Used a KdTree to make nearestPoint calculations in logarithmic time.
+            </li>
+            <li>
+                Wrote a rastering algorithm that allows users to zoom in and out and have the
+                appropriate images displayed.
+            </li>
+        </ul>
+    </div>
+    <h2 class = "header">Code</h2>
+    <div class = "text">
+        <p>
+            Because this was a class project, I am not allowed to make this code publicly
+            accessible. However, I have been given permission to privately share it with interested
+            parties outside of my university, so do contact me if you are curious. (make sure
+            this is accurate)
+        </p>
+    </div>
+</body>
+</html>
