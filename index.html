@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Jake Webster</title>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <script src = "script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- Remove when construction complete :)-->
     <h3 id = "construction">This features and aesthetics of this site are currently
-        under development. Last updated: 1/12/2021</h3>
+        under development and may not behave optimally in the short run. Last updated: 1/17/2021</h3>
     <div id = "menu" class = "dropdown">
         <h1 class = "title">
             <strong>Jake Webster</strong>
@@ -20,8 +22,14 @@
         <h1><a href = "#skills_head">Skills</a></h1>
         <h1><a href = "#projects_head">Projects</a></h1>
     </div>
-
-    <h2 id = "contact_head">
+    <!-- Helpful code?
+    <button id="btn">Save</button>
+    function btnClicked() {
+    // do something here
+    }
+    let btn = document.querySelector('#btn');
+    btn.addEventListener('click',btnClicked); -->
+    <h2 id = "contact_head" onclick = "minimize('contact')">
         <strong>Contact Me</strong>
     </h2>
     <div id = "contact">
@@ -48,7 +56,7 @@
 
     <br>
 
-    <h2 id = "about_head">
+    <h2 id = "about_head" onclick = "minimize('intro')">
         <strong>About Me</strong>
     </h2>
     <div id = "intro">
@@ -63,7 +71,7 @@
 
     <br>
 
-    <h2 id = "school_head">
+    <h2 id = "school_head" onclick = "minimize('school')">
         <strong>My Classes</strong>
     </h2>
     <div id = "school">
@@ -86,7 +94,7 @@
 
     <br>
 
-    <h2 id = "skills_head">
+    <h2 id = "skills_head" onclick = "minimize('skills')">
         <strong>Languages and Skills</strong>
     </h2>
     <div id = "skills">
@@ -125,47 +133,42 @@
 
     <br>
 
-    <h2 id = "projects_head">
+    <h2 id = "projects_head" onclick = "minimize('projects')">
         <strong>My Projects</strong>
     </h2>
     <div id = "projects">
         <!-- <h4>World Generation</h4> -->
-        <div class = "byow img">
+        <div class = "byow img" >
             <a href = "byow.html">
-                <p class = "imgtext"><em>Java</em> Players attempt to avoid pathfinding enemies in a pseudorandomly
-                    generating world, or play in a custom-built world.</p>
+                <p class = "imgtext" onmouseover = "alternate('byow', 0)">Build Your Own World</p>
             </a>
         </div>
 
         <!-- <h4>Bearmaps</h4> -->
-        <div class = "map img">
+        <div class = "map img" onmouseover = "alternate('map', 1)">
             <a href = "map.html">
-                <p class = "imgtext"><em>Java</em> Users interact with a dynamic map of the city of Berkeley and find the
-                    shortest path between point A and point B.</p>
+                <p class = "imgtext">BearMaps</p>
             </a>
         </div>
 
         <!-- <h4>Ants</h4> -->
-        <div class = "ants img">
+        <div class = "ants img" onmouseover = "alternate('ants', 2)">
             <a href = "ants.html">
-                <p class = "imgtext"><em>Python</em> In a parody of <em>Plants Vs. Zombies</em>, players attempt
-                    to prevent the Bees from reaching the Ant Queen with a number of tactical Ants.</p>
+                <p class = "imgtext">Ants vs. Bees</p>
             </a>
         </div>
 
         <!-- <h4>Digital Guitar</h4> -->
-        <div class = "guitar img">
+        <div class = "guitar img" onmouseover = "alternate('guitar', 3)">
             <a href = "guitar.html">
-                <p class = "imgtext"><em>Java</em> Users can enter a sequence of characters and get a nice melody
-                    outputted using the Karplus-Strong algorithm to convert it to "plucking".</p>
+                <p class = "imgtext">Digital Rockstar</p>
             </a>
         </div>
 
         <!-- <h4>Stock Predictor</h4> -->
-        <div class = "stock img">
+        <div class = "stock img" onmouseover = "alternate('stock', 4)">
             <a href = "stock.html">
-                <p class = "imgtext"><em>Python</em> This was a group project to see whether a training an algorithm on
-                    short-term trends and financial reports could outperform the market.</p>
+                <p class = "imgtext">Beating the Market</p>
             </a>
         </div>
     </div>

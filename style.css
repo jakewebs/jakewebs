@@ -69,7 +69,7 @@ h4, p {
     background-color: #000080;
     height: 100%;
     top: 0%;
-    font-size: 4vmin;
+    font-size: 2.5vmin;
 }
 
 .img {
@@ -85,7 +85,7 @@ h4, p {
     height: 67px;
     top: 88%;
     position: relative;
-    font-size: 2.5vmin;
+    font-size: 4vmin;
     text-decoration: none;
     margin: 0%;
 }
