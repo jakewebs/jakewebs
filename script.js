@@ -1,7 +1,7 @@
 function minimize(section) {
     let text = document.getElementById(section.toString());
     if (text.style.display == "none") {
-        text.style.display = "block";
+        text.style.display = "";
     } else {
         text.style.display = "none";
     }
