@@ -11,7 +11,7 @@
 <body>
     <!-- Remove when construction complete :)-->
     <h3 id = "construction">This features and aesthetics of this site are currently
-        under development and may not behave optimally in the short run. Last updated: 5/18/2021</h3>
+        under development and may not behave optimally in the short run. Last updated: 5/20/2021</h3>
     <div id = "menu" class = "dropdown">
         <h1 class = "title">
             <strong>Jake Webster</strong>
@@ -34,6 +34,36 @@
     <h2 id = "about_head" onclick = "minimize('intro')">
         <strong>About Me</strong>
     </h2>
+
+    <div id = "slideshow">
+        <div class = "slide">
+            <div id = "imgnumber">1 / 4</div>
+            <img src = "images/jake1.jpg" width = 100% height = 100%>
+        </div>
+        <div class = "slide">
+            <div id = "imgnumber">2 / 4</div>
+            <img src = "images/jake2.jpg" width = 100% height = 100%>
+        </div>
+        <div class = "slide">
+            <div id = "imgnumber">3 / 4</div>
+            <img src = "images/jake3.JPG" width = 100% height = 100%>
+        </div>
+        <div class = "slide">
+            <div id = "imgnumber">4 / 4</div>
+            <img src = "images/jake4.JPG" width = 100% height = 100%>
+        </div>
+        <a class = "back" onclick = "changeSlide(-1)">&#10094;</a> <!-- unicode for left arrow -->
+        <a class = "forward" onclick = "changeSlide(1)">&#10095;</a> <!-- unicode for right arrow -->
+    </div>
+
+    <br>
+
+    <div id = "dots">
+        <span class="dot" onclick="showCurrent(1)"></span>
+        <span class="dot" onclick="showCurrent(2)"></span>
+        <span class="dot" onclick="showCurrent(3)"></span>
+        <span class="dot" onclick="showCurrent(4)"></span>
+    </div>
     <div id = "intro">
         <p>
             Hi, my name is Jake Webster and I am a sophomore at the University of California, Berkeley.
@@ -51,7 +81,7 @@
     </h2>
     <div id = "school">
         <h4>
-            Some of the classes I have taken or am taking include:
+            Some of the classes I have taken include:
         </h4>
         <ul>
             <li><ins>CS70</ins>: Discrete Mathematics and Probability Theory</li>
@@ -63,7 +93,7 @@
             <li><ins>Econ 2</ins>: Introduction to Economics</li>
         </ul>
         <p>
-            Total GPA: 3.89
+            Total GPA: 3.90
         </p>
     </div>
 
@@ -184,5 +214,7 @@
         <h3><a href = "https://www.flaticon.com/authors/freepik">LinkedIn</a></h3>
         <h3><a href = "https://www.github.com">GitHub</a></h3>
     </div>
+
+    <script>setCurSlide(1); slide(1); </script>
 </body>
 </html>

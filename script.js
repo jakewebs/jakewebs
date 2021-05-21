@@ -28,3 +28,36 @@ function alternate(proj, index) {
         text.innerHTML = pTitles[index];
     }
 }
+
+var cur_slide;
+//slide(cur_slide);
+function setCurSlide(cur) {
+    cur_slide = cur;
+}
+
+function changeSlide(amount) {
+    slide(cur_slide += amount);
+}
+
+function showCurrent(cur) {
+    slide(cur_slide = cur);
+}
+
+function slide(num) {
+    var i;
+    var pics = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    if (num > pics.length) {
+        cur_slide = 1;
+    } else if (num < 1) {
+        cur_slide = pics.length;
+    }
+    for (i = 0; i < pics.length; i += 1) {
+        pics[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i += 1) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    pics[cur_slide - 1].style.display = "block";
+    dots[cur_slide - 1].className += " active";
+}

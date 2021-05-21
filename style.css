@@ -1,5 +1,5 @@
 /*Colors: https://www.w3schools.com/cssref/css_colors.asp */
-
+/* {box-sizing:border-box}
 /* Remove when construction done */
 #construction {
     width: 43%;
@@ -19,6 +19,7 @@ h2 {
     width: 25%;
     margin: 2% 37.5%;
     text-align: center;
+    cursor: pointer;
 }
 
 body {
@@ -151,4 +152,81 @@ a {
     grid-gap: 5%;
     margin: 2% 17.5%;
     border: 3px dashed #434343/*#F5F5F5*/;
+}
+
+#dots {
+    text-align: center;
+}
+
+#slideshow {
+    margin: auto;
+    position: relative;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    display: none;
+    -webkit-animiation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+.back, .forward {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: ivory;
+    margin-top: -22px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    transition: 0.7s ease;
+}
+
+.forward {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+.back:hover, .forward:hover {
+    background-color: rgba(11, 27, 53, 0.8);
+}
+
+#imgnumber {
+    color: #F5F5F5;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 1px;
+    left: 93%;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    margin 0 2px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.7s ease;
+}
+
+.active, .dot:hover {
+    background-color: #666666;
 }
