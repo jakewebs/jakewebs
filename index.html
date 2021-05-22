@@ -11,7 +11,7 @@
 <body>
     <!-- Remove when construction complete :)-->
     <h3 id = "construction">This features and aesthetics of this site are currently
-        under development and may not behave optimally in the short run. Last updated: 5/20/2021</h3>
+        under development and may not behave optimally in the short run. Last updated: 5/22/2021</h3>
     <div id = "menu" class = "dropdown">
         <h1 class = "title">
             <strong>Jake Webster</strong>
@@ -31,7 +31,8 @@
     let btn = document.querySelector('#btn');
     btn.addEventListener('click',btnClicked); -->
 
-    <h2 id = "about_head" onclick = "minimize('intro')">
+    <h2 id = "about_head" onclick = "minimize('intro'), minimize('slideshow'), minimize('dots'), rotate('about_head')">
+        <strong class = "arrow">&#10095;</strong>
         <strong>About Me</strong>
     </h2>
 
@@ -76,7 +77,8 @@
 
     <br>
 
-    <h2 id = "school_head" onclick = "minimize('school')">
+    <h2 id = "school_head" onclick = "minimize('school'), rotate('school_head')">
+        <strong class = "arrow">&#10095;</strong>
         <strong>My Classes</strong>
     </h2>
     <div id = "school">
@@ -99,7 +101,8 @@
 
     <br>
 
-    <h2 id = "skills_head" onclick = "minimize('skills')">
+    <h2 id = "skills_head" onclick = "minimize('skills'), rotate('skills_head')">
+        <strong class = "arrow">&#10095;</strong>
         <strong>Languages and Skills</strong>
     </h2>
     <div id = "skills">
@@ -138,7 +141,8 @@
 
     <br>
 
-    <h2 id = "projects_head" onclick = "minimize('projects')">
+    <h2 id = "projects_head" onclick = "minimize('projects'), rotate('projects_head')">
+        <strong class = "arrow">&#10095;</strong>
         <strong>My Projects</strong>
     </h2>
     <div id = "projects">
@@ -180,7 +184,8 @@
 
     <br><br><br><br><br>
 
-    <h2 id = "contact_head" onclick = "minimize('contact')">
+    <h2 id = "contact_head" onclick = "minimize('contact'), rotate('contact_head')">
+        <strong class = "arrow">&#10095;</strong>
         <strong>Contact Me</strong>
     </h2>
     <div id = "contact">

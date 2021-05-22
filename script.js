@@ -6,6 +6,20 @@ function minimize(section) {
         text.style.display = "none";
     }
 }
+
+function rotate(header) {
+    let children = document.getElementById(header).childNodes;
+    for (let i = 0; i < children.length; i += 1) {
+        let cur = children[i];
+        if (cur.innerHTML == '❯') {
+            if (cur.className == 'rotate') {
+                cur.className = 'arrow';
+            } else {
+                cur.className = 'rotate';
+            }
+        }
+    }
+}
 var pText = [];
 pText[0] = "<em>Java</em> Players attempt to avoid pathfinding enemies in a pseudorandomly generating world, or play in a custom-built world.";
 pText[1] = "<em>Java</em> Users interact with a dynamic map of the city of Berkeley and find the shortest path between point A and point B.";

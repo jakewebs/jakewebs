@@ -61,11 +61,13 @@ h4, p {
 }
 
 .guitar {
-    background-image: url("images/guitar.jpg");
+    background-image: url("images/guitar.jpeg");
+    /* Source: https://freestocks.org/photo/guitarist-hand-playing-guitar/ */
 }
 
 .stock {
-    background-image: url("images/stocks.jpg");
+    background-image: url("images/stock.jpeg");
+    /* Source: https://www.nytimes.com/2019/03/04/opinion/sanders-stock-buybacks.html */
 }
 
 .img p:hover {
@@ -229,4 +231,17 @@ a {
 
 .active, .dot:hover {
     background-color: #666666;
+}
+
+.arrow {
+    color: #666666;
+    position: absolute;
+    left: 39%;
+    transform: rotate(90deg);
+}
+
+.rotate {
+    color: #666666;
+    position: absolute;
+    left: 39%;
 }
