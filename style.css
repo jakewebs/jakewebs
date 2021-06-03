@@ -26,17 +26,20 @@ body {
     /*text-align: center;*/
     /*background-color: #D8BFD8;
     background-color: #A0A0A0;
-    NEW COLOR?*/ background-color: #f3f3f3;
+    NEW COLOR?*/
+    background-color: #f3f3f3;
     width: 100%;
     justify-self: center;
+    margin: 0px;
 }
+
 
 ol, ul {
     list-style-position: inside;
 }
 
-h4, p, li {
-    font-family: "Monaco";
+h4, h3, p, li {
+    font-family: 'Roboto', sans-serif;
     color: #434343/*#F5F5F5*/;
 }
 
@@ -108,13 +111,16 @@ h4, p {
 
 #menu {
     /*background-color: #000080;*/
-
     color: #F5F5F5;
     background-color: #1c4587;
     display: grid;
     grid-template-columns: 20% 18% 12% 12% 12% 12% 12%;
     grid-gap: 0%;
     text-align: center;
+}
+
+h3 {
+    color: #f3f3f3;
 }
 
 .dropdown a {
@@ -142,18 +148,6 @@ a {
     grid-gap: 1%;
     justify-items: center;
     text-align:center;
-}
-
-#sources {
-    /*color: #000080;*/
-    color: #1c4587;
-    text-align: center;
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 15% 10% 10% 10% 10% 10%;
-    grid-gap: 5%;
-    margin: 2% 17.5%;
-    border: 3px dashed #434343/*#F5F5F5*/;
 }
 
 #dots {
