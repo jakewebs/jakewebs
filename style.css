@@ -73,12 +73,16 @@ h4, p {
     /* Source: https://www.nytimes.com/2019/03/04/opinion/sanders-stock-buybacks.html */
 }
 
-.img p:hover {
-    /*background-color: #000080;*/
+.img:hover {
+    /* background-color: #000080;
     background-color: #1c4587;
     height: 100%;
     top: 0%;
-    font-size: 2.5vmin;
+    TODO: Center the text height-wise when hovering? */
+    font-size: 3vmin;
+    margin: 0%;
+    top: 82%;
+    line-height: normal;
 }
 
 .img {
@@ -87,18 +91,22 @@ h4, p {
     /*width: 800px;*/
     width: 80%;
     text-align: center;
+    line-height: 100px;
 }
+
+
 .imgtext {
     /*background-color: #000080;*/
     background-color: #1c4587;
     color: #F5F5F5;
     opacity: 0.8;
-    height: 67px;
-    top: 88%;
+    height: 100px;
+    top: 82%; /* vs 67 px, 88% prev */
     position: relative;
-    font-size: 4vmin;
+    font-size: 3vmin; /* 4vmin; better for non-hover option? */
     text-decoration: none;
     margin: 0%;
+    align-items: center;
 }
 
 #projects {
