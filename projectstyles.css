@@ -1,3 +1,14 @@
+/* Remove when construction done */
+#construction {
+    width: 43%;
+    margin: 1.5% 29.5%;
+    background-color: ivory;
+    color: indigo;
+    border: 5px solid crimson;
+    padding: 5px;
+    text-align: center;
+}
+
 body {
     /*background-color: #A0A0A0;*/
     background-color: #f3f3f3;
