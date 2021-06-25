@@ -39,6 +39,14 @@ a {
     color: #1c4587;
     margin: auto;
 }
+/* TODO: Figure a way to embed games ie
+    JSPS like https://www.tutorialspoint.com/jsp/jsp_environment_setup.htm */
+.video {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
 
 .header {
     text-align: center;
