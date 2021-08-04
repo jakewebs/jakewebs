@@ -56,3 +56,13 @@ a {
 .text {
     margin: 0% 5%;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, p, iframe {
+    text-align: center;
+    color: #1c4587;
+}
