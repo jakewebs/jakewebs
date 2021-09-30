@@ -84,7 +84,7 @@ function slide(num) {
         pic.style.display = "none";
     }
     for (const dot of dots) {
-        dot.classList.toggle('active')
+        dot.classList.remove('active')
     }
     pics[cur_slide - 1].style.display = "block";
     dots[cur_slide - 1].classList.add('active')
